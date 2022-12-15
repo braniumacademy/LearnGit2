@@ -20,6 +20,38 @@ public class Student {
         this.birthDate = birthDate;
     }
 
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public float getGpa() {
+        return gpa;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setGpa(float gpa) {
+        this.gpa = gpa;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
