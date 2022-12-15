@@ -48,8 +48,9 @@ public class Student {
         return studentId.equals(student.studentId);
     }
 
-    public String getFirstName() {
-        String[] names = fullName.split("\\s+");
+    public String getFirst() {
+        String regex = "\\s+";
+        String[] names = fullName.split(regex);
         if(names.length == 0) {
             return "";
         }
@@ -61,5 +62,4 @@ public class Student {
         return Objects.hash(studentId);
     }
 }
-// git diff
-// git diff --cached/ --staged
+// git add
