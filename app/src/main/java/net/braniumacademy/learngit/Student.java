@@ -20,38 +20,6 @@ public class Student {
         this.birthDate = birthDate;
     }
 
-    public String getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public float getGpa() {
-        return gpa;
-    }
-
-    public void setGpa(float gpa) {
-        this.gpa = gpa;
-    }
-
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -64,8 +32,14 @@ public class Student {
     public int hashCode() {
         return Objects.hash(studentId);
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId='" + studentId + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", gpa=" + gpa +
+                ", birthDate=" + birthDate +
+                '}';
+    }
 }
-// git add <tên file>
-// git add <tên thư mục>
-// git add *.txt
-// git add .
