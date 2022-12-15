@@ -40,18 +40,6 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public void setGpa(float gpa) {
-        this.gpa = gpa;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -60,18 +48,18 @@ public class Student {
         return studentId.equals(student.studentId);
     }
 
+    public String getFirstName() {
+        String[] names = fullName.split("\\s+");
+        if(names.length == 0) {
+            return "";
+        }
+        return names[names.length - 1];
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(studentId);
     }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "studentId='" + studentId + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", gpa=" + gpa +
-                ", birthDate=" + birthDate +
-                '}';
-    }
 }
+// git diff
+// git diff --cached/ --staged
