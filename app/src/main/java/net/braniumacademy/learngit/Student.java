@@ -9,6 +9,8 @@ public class Student {
     private float gpa;
     private Date birthDate;
 
+    private String major;
+
     public Student() {
 
     }
@@ -38,6 +40,14 @@ public class Student {
 
     public void setStudentId(String studentId) {
         this.studentId = studentId;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
     }
 
     @Override
