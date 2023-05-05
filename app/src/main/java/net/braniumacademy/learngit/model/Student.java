@@ -1,4 +1,4 @@
-package net.braniumacademy.learngit;
+package net.braniumacademy.learngit.model;
 
 import java.util.Date;
 import java.util.Objects;
