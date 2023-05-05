@@ -26,8 +26,4 @@ public class Utils {
             return null;
         }
     }
-
-    public long dateToLong(Date date) {
-        return date.getTime();
-    }
 }
