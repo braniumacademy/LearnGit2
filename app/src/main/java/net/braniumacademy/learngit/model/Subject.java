@@ -1,4 +1,4 @@
-package net.braniumacademy.learngit;
+package net.braniumacademy.learngit.model;
 
 public class Subject {
     private String subjectId;
